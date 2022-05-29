@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+   <form action="http://localhost:2122/ShoppingBuzz/ControllerServlet"?task="login" method="post">
+  	 User Name <input type="text" name="username"><br/>
+ 	 Password <input type="text" name="password"><br/>
+ 	 <input type="submit" value="Login">
+   </form>
+   <a href="http://localhost:2122/ShoppingBuzz/ControllerServlet?task="register">Sign Up</a>
+</body>
+</html>

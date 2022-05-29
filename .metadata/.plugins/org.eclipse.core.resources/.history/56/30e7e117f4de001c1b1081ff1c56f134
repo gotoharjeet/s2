@@ -1,0 +1,12 @@
+package com.dao;
+
+import com.dto.User;
+
+public class UserDaoImp implements UserDao{
+
+	@Override
+	public boolean validateUser(User user) {
+		return false;
+	}
+
+}

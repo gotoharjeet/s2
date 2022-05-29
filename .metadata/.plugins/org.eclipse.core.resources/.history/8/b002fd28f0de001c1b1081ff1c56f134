@@ -1,0 +1,13 @@
+package com.service;
+
+import com.dto.User;
+
+public class UserServiceImp implements UserService {
+
+	@Override
+	public boolean isValidUser(User user) {
+		
+		return false;
+	}
+
+}

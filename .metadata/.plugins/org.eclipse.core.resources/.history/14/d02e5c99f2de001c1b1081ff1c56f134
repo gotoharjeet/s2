@@ -1,0 +1,15 @@
+package com.service;
+
+import com.dto.User;
+
+public class UserServiceImp implements UserService {
+
+	@Override
+	public boolean validateUser(User user) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+
+}

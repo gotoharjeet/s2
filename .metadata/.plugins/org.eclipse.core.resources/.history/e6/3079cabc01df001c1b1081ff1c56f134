@@ -1,0 +1,36 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.dto.User;
+import com.util.ConnectionManagerImpl;
+
+public class UserDaoImp implements UserDao{
+	private Connection connection;
+	
+	public UserDaoImp()
+	{
+	  connection=new ConnectionManagerImpl().getConnection();
+	  
+	}
+	@Override
+	public boolean validateUser(User user) {
+		boolean isUserValid=false;
+//		String query="select * from userdetails where user_name=? and password=?";
+//		
+//		try {
+//			PreparedStatement preparedStatement=connection.prepareStatement(query);
+//			preparedStatement.setString(1,user.);
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+		if(!user.getUserName().isEmpty() && !user.getPassword().isEmpty())
+		{
+			isUserValid=true;
+		}
+		return isUserValid;
+	}
+
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>First Page</title>
+</head>
+<body>
+	<h1>Personal Detail</h1><br/>
+	First Name <input type="text" name="fname">
+	Last Name <input type="text" name="lname">
+	 
+</body>
+</html>

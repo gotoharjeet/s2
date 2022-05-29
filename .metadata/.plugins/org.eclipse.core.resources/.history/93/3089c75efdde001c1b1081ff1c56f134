@@ -1,0 +1,26 @@
+package com.dao;
+
+import java.sql.Connection;
+
+import com.dto.User;
+
+public class UserDaoImp implements UserDao{
+	private Connection connection;
+	
+	public UserDaoImp()
+	{
+		
+	}
+	@Override
+	public boolean validateUser(User user) {
+		
+		if(user.equals(null))	{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+}
